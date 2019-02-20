@@ -1,2 +1,22 @@
-<h1>People#edit</h1>
-<p>Find me in app/views/people/edit.html.erb</p>
+<h1>Edit Person</h1>
+<%= form_for @person do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+
+    <%= f.label :hair_color %>
+    <%= f.text_field :hair_color %>
+
+    <%= f.label :eye_color %>
+    <%= f.text_field :eye_color %>
+
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+
+    <%= f.label :alive %>
+    <%= f.text_field :alive %>
+
+    <%= f.submit %>
+<% end %>
